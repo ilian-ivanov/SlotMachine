@@ -1,4 +1,6 @@
-﻿namespace SlotMachine.Models
+﻿using SlotMachine.Models.Exceptions;
+
+namespace SlotMachine.Models
 {
     public class RandomWithProbabilities : IRandomWithProbabilities
     {
@@ -6,7 +8,7 @@
         {
             if (!IsProbabilitiesCorrect(symbols))
             {
-                throw new ArgumentException("The probabilites of the symbols are not equal to 100%!");
+                throw new RandomProbabilityException("The probabilites of the symbols are not equal to 100%!");
             }
 
             var generator = new Random();

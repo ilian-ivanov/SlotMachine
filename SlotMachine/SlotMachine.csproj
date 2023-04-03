@@ -14,8 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GameService\SlotMachine.Services.csproj" />
     <ProjectReference Include="..\SlotMachine.Models\SlotMachine.Models.csproj" />
+    <ProjectReference Include="..\SlotMachine.Services\SlotMachine.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>

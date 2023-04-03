@@ -1,4 +1,5 @@
 ﻿using SlotMachine.Models;
+using SlotMachine.Models.Exceptions;
 
 namespace SlotMachine.Services
 {
@@ -34,7 +35,7 @@ namespace SlotMachine.Services
                         _inputOutputService.ShowMessage($"Current balance is: {_slotMachine.CurrentBalance}");
                     }
                 }
-                catch (ArgumentException ex)
+                catch (RandomProbabilityException ex)
                 {
                     throw ex;
                 }
